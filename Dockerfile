@@ -11,9 +11,8 @@ FROM scratch
 ENV NODE_ENV=production
 ENV PORT=8080
 WORKDIR /workspace
-USER nuxt
 
-COPY --from=builder --chown=nuxt:nuxt /app/.output /workspace/
+COPY --from=builder /app/.output /workspace/
 EXPOSE ${PORT}
 
 CMD [ "node", "--enable-source-maps", "/workspace/server/index.mjs" ]
