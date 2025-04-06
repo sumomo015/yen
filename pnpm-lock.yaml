@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@iconify/icons-lucide':
+        specifier: 1.2.135
+        version: 1.2.135
       '@nuxt/fonts':
         specifier: 0.11.1
         version: 0.11.1(db0@0.3.1)(ioredis@5.6.0)(magicast@0.3.5)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
@@ -450,6 +453,9 @@ packages:
 
   '@iconify/collections@1.0.534':
     resolution: {integrity: sha512-c50uAmXmiRSYEP6vXyfQG5uQtJVL0Vm6S2KFcbfw/7fByDM2SBnWQNH+/smXq/bZXVT0CdJr2Nsct+FDdqqKuA==}
+
+  '@iconify/icons-lucide@1.2.135':
+    resolution: {integrity: sha512-odjb/fGnKGIw3aNwZV8n4lTmpPN9LR2nHa3hjmZGrHNK3y1gHhiaU4H1XlCrSeQxkEN6TOB+l/falLwRo1rGRw==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -4451,6 +4457,10 @@ snapshots:
   '@humanwhocodes/retry@0.4.2': {}
 
   '@iconify/collections@1.0.534':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify/icons-lucide@1.2.135':
     dependencies:
       '@iconify/types': 2.0.0
 

@@ -16,6 +16,7 @@
     "ncu": "ncu -ui"
   },
   "dependencies": {
+    "@iconify/icons-lucide": "1.2.135",
     "@nuxt/fonts": "0.11.1",
     "@nuxt/ui": "3.0.2",
     "@nuxtjs/html-validator": "2.1.0",
