@@ -37,11 +37,25 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     session: {
-      name: import.meta.env.PROD ? '__Host-session' : 'session',
+      name: 'session',
       password: process.env.NUXT_SESSION_PASSWORD ?? '',
       maxAge: 60 * 60 * 24 * 7, // 1 week
       cookie: {
         sameSite: 'lax',
+      },
+    },
+  },
+  $production: {
+    runtimeConfig: {
+      session: {
+        name: '__Host-session',
+        password: process.env.NUXT_SESSION_PASSWORD ?? '',
+        maxAge: 60 * 60 * 24 * 7, // 1 week
+        cookie: {
+          secure: true,
+          httpOnly: true,
+          sameSite: 'lax',
+        },
       },
     },
   },
