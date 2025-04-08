@@ -15,7 +15,7 @@ async function logout(): Promise<void> {
 
 <template>
   <UContainer>
-    <h1>Welcome {{ user?.name }}</h1>
+    <h1>Welcome {{ user?.username }}</h1>
     <UButton
       @click="logout"
     >
